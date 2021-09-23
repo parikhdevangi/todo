@@ -1,0 +1,53 @@
+<section class="heading-section">
+    <h1 class="title is-1 has-text-centered">Todo</h1>
+</section>
+<div class="container add-todo-box-container">
+    <div class="add-todo-box">
+        <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+            
+            <div class="field is-grouped" style="margin: 0;">
+                <p class="control is-expanded" >
+                  <input ngModel #textInvalid="ngModel" required name="text" class="input" 
+                  type="text" 
+                  placeholder="Create a new todo..">
+                </p>
+              </div>
+                <p class="help is-danger" *ngIf="textInvalid.invalid && textInvalid.touched">Please enter the text of your todo</p> 
+        </form>
+    </div>
+    
+</div>
+
+ <section class="section">
+    <div class="container" >
+        
+        <div class="add-todo-box2" >
+        <div class="todo-list1" >
+            
+            <app-todo-item 
+              *ngFor="let todo of todos"
+              [todo]="todo" 
+              (todoClicked)="toggleCompleted(todo)"
+              (deleteClicked)="deleteTodo(todo)"
+               >
+            </app-todo-item>
+           
+        </div>
+
+        
+        <!-- <div *ngIf="remaining() === 0" >
+            <label class="allTodoCompleted">Yey! All task has been completed</label>
+           
+        </div> -->
+        <div class="footer">
+           
+                <label  class="wrapper" >{{ remaining() }} items left</label>
+                <label class="wrapper2" style="color: #4CCCCC;">All</label>
+                <label class="wrapper2">Active</label>
+                <label class="wrapper2" >Completed</label>
+                <label class="wrapper1 is-align-content-end"   (click)="deleteCompletedTask()">Clear Completed</label>
+            
+        </div>
+    </div> 
+</div>
+</section>

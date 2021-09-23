@@ -1,0 +1,180 @@
+// .heading-section{
+//     background: linear-gradient(to left,  rgb(71, 118, 230,0.7) , rgb(142,84,233,0.7)),url(/assets/m1.jpg);
+//     background-size: 100% 100%;
+//     padding: 90px;
+//     padding-top: 40px;
+//     h1.title{
+//         font-size:1.3rem;
+//         font-weight: bold;
+//         color: white;
+//         text-shadow: 0px 1px 2px rgb (black,0.12);
+//         letter-spacing: 6px;
+//         padding-right: 120px;  
+            
+//     }  
+// }
+// // .add-todo-box-container{
+// //     position: sticky;
+// //     top: 0;
+// //     z-index: 1;
+// // }
+// .container{
+//     display: flex;
+//     flex-direction: column;
+//     padding-left: 60px;
+    
+    
+// .add-todo-box{
+//    width: 80%;
+//   display: flex;
+//   flex-direction: column;
+//     background: white;
+//     padding: 1px;
+  
+//     border-radius: 4px;
+//     margin-top: -90px;
+//     box-shadow: 0 4px 12px rgba(black,0.2);
+// }
+
+// }
+// .add-todo-box2{
+//     display: flex;
+//     flex-direction: column;
+//     width: 77%;
+//      background: white;
+//     padding: 1px;
+//     border-radius: 4px;
+//     margin-top:-70px ;
+//     box-shadow: 0 4px 12px rgba(black,0.2);
+//     margin-left: 38px;
+    
+// }   
+// .footer{
+//     padding:10px;
+//     display: flex;
+//     gap: 0.5rem;
+//     font-size: xx-small;
+    
+// }
+
+// .label{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     padding: 0.2rem 0;
+// }
+// .wrapper1{
+//     cursor: pointer;
+//     transition: 0.5s ease;
+//     transform: translateY(1px);
+//     &:hover{
+//         color: #4CCCCC;
+//         transform: translateY(0px);
+        
+//     }
+// }
+// .wrapper2{
+//     cursor: pointer;
+//     transition: 0.5s ease;
+//     transform: translateY(1px);
+//     &:hover{
+//         color: #4CCCCC;
+//         transform: translateY(0px);
+        
+//     }
+// }
+
+// .clear{
+//     cursor: pointer;
+// }
+
+// @media screen and (orientation: landscape){
+.heading-section{
+   
+    background: linear-gradient(to left,  rgb(71, 118, 230,0.7) , rgb(142,84,233,0.7)),url(/assets/m1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 140px;
+    padding-top: 40px;
+    
+    h1.title{
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 1px 2px rgb (black,0.12);
+        letter-spacing: 8px;
+        padding-right: 360px;
+            
+    }
+}
+.container{
+    max-width: 500px;
+   
+}
+.add-todo-box-container{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.add-todo-box{
+    background: white;
+    padding: 8px;
+   // border:  1px solid black;
+    border-radius: 4px;
+    margin-top: -110px;
+    box-shadow: 0 4px 12px rgba(black,0.2);
+   
+}
+
+.add-todo-box2{
+    //border:  1px solid black;
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top:-30px ;
+    box-shadow: 0 4px 12px rgba(black,0.2);
+    
+    
+}
+
+.footer{
+    padding:10px;
+    display: flex;
+    gap: 1.5rem;
+    
+}
+  .label{
+    flex-flow: column ;
+    justify-content: space-around;
+    padding: 0.2rem 0;
+}
+    .wrapper1{
+            cursor: pointer;
+            transition: 0.5s ease;
+            transform: translateY(1px);
+            &:hover{
+                color: #4CCCCC;
+                transform: translateY(0px);
+                
+            }
+        }
+.wrapper2{
+            cursor: pointer;
+            transition: 0.5s ease;
+            transform: translateY(1px);
+            &:hover{
+                color: #4CCCCC;
+                transform: translateY(0px);
+                
+            }
+        }
+       
+   
+.allTodoCompleted{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.clear{
+    cursor: pointer;
+}
